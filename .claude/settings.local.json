@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev)",
+      "Bash(find \"/a/Claude code/ideal-agro-himoya\" -type f -not -path \"*/node_modules/*\" -not -path \"*/.next/*\" -not -path \"*/.git/*\" -exec ls -lh {} ;)",
+      "Bash(sort -k2)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(dir /B)",
+      "Bash(cmd //c \"dir /B\")",
+      "PowerShell(Get-ChildItem -Path \"a:\\\\Claude code\\\\ideal-agro-himoya\\\\src\" -Recurse -Force | Where-Object { -not $_.PSIsContainer } | Select-Object FullName | Format-Table -AutoSize -Wrap)",
+      "PowerShell(Get-ChildItem -Path \"a:\\\\Claude code\\\\ideal-agro-himoya\\\\public\" -Recurse -Force | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, Length | Format-Table -AutoSize)",
+      "WebSearch",
+      "Bash(mkdir -p \"C:/Users/aliiy/.claude/projects/a--Claude-code-ideal-agro-himoya/memory\")",
+      "Read(//c/Users/aliiy/.claude/projects/a--Claude-code-ideal-agro-himoya/**)",
+      "PowerShell(if \\(-not \\(Test-Path \"C:\\\\Users\\\\aliiy\\\\.claude\\\\projects\\\\a--Claude-code-ideal-agro-himoya\\\\memory\"\\)\\) { New-Item -ItemType Directory -Path \"C:\\\\Users\\\\aliiy\\\\.claude\\\\projects\\\\a--Claude-code-ideal-agro-himoya\\\\memory\" -Force | Out-Null }; Get-ChildItem \"C:\\\\Users\\\\aliiy\\\\.claude\\\\projects\\\\a--Claude-code-ideal-agro-himoya\\\\memory\" -Force | Select-Object Name)",
+      "Bash(npx tsc *)",
+      "PowerShell(\"ok\")"
+    ],
+    "additionalDirectories": [
+      "a:\\Claude code\\ideal-agro-himoya\\src\\app\\developer"
+    ]
+  }
+}

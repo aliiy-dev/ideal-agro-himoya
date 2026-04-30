@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#2E8B57" stroke-width="3"/>
+
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="82" fill="#2E8B57" opacity="0.08"/>
+
+  <!-- Leaf Shape - Left -->
+  <path d="M70 130 Q60 90 80 60 Q90 75 85 110Z" fill="#2E8B57"/>
+  <path d="M70 130 Q65 95 80 65" stroke="#236B43" stroke-width="1.5" fill="none"/>
+
+  <!-- Leaf Shape - Right -->
+  <path d="M130 130 Q140 90 120 60 Q110 75 115 110Z" fill="#3DA86A"/>
+  <path d="M130 130 Q135 95 120 65" stroke="#236B43" stroke-width="1.5" fill="none"/>
+
+  <!-- Center Leaf -->
+  <path d="M100 125 Q95 85 100 50 Q105 85 100 125Z" fill="#236B43"/>
+
+  <!-- Shield -->
+  <path d="M100 75 Q80 80 72 95 Q72 118 100 135 Q128 118 128 95 Q120 80 100 75Z" fill="#2E8B57" opacity="0.2" stroke="#2E8B57" stroke-width="2"/>
+
+  <!-- Checkmark inside shield -->
+  <path d="M88 102 L96 110 L114 92" stroke="#2E8B57" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text: IAH -->
+  <text x="100" y="168" text-anchor="middle" fill="#1E3A8A" font-family="Arial, sans-serif" font-size="22" font-weight="bold" letter-spacing="3">IAH</text>
+</svg>
