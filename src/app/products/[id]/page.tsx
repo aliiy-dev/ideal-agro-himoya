@@ -199,7 +199,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                   +998 95 937 12 12
                 </a>
                 <a
-                  href={`https://t.me/+998959371212?text=${telegramMsg}`}
+                  href={`https://t.me/BAYJO?text=${telegramMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-dark btn-lg flex-1 justify-center"

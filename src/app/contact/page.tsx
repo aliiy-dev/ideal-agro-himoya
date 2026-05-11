@@ -8,7 +8,6 @@ import {
   FiMapPin,
   FiSend,
   FiCheck,
-  FiClock,
 } from 'react-icons/fi';
 import { useT } from '@/store/languageStore';
 import { useToastStore } from '@/store/toastStore';
@@ -165,24 +164,6 @@ export default function ContactPage() {
               </a>
             ))}
 
-            {/* Hours */}
-            <div
-              className="card-flat p-5"
-              style={{ background: 'var(--green-50)', borderColor: 'var(--green-200)' }}
-            >
-              <div className="flex items-center gap-2 mb-3">
-                <FiClock className="w-4 h-4" style={{ color: 'var(--green-700)' }} />
-                <h3 className="text-sm font-bold uppercase tracking-wider"
-                  style={{ color: 'var(--ink-900)' }}>
-                  {t.contactPage_hours_title}
-                </h3>
-              </div>
-              <ul className="space-y-1.5 text-sm" style={{ color: 'var(--ink-700)' }}>
-                <li>{t.contactPage_hours_weekdays}</li>
-                <li>{t.contactPage_hours_saturday}</li>
-                <li>{t.contactPage_hours_sunday}</li>
-              </ul>
-            </div>
           </motion.div>
         </div>
       </div>

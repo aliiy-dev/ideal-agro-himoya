@@ -88,7 +88,7 @@ const CtaStrip = () => {
 
             {/* Telegram */}
             <a
-              href="https://t.me"
+              href="https://t.me/BAYJO"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 rounded-2xl transition-all group"

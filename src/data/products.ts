@@ -99,10 +99,10 @@ export const seedProducts: Product[] = [
       en: "Wheat, barley: 1–1.5 kg/ha | Cotton: 1–1.5 kg/ha | Vegetables: 0.5–1 kg/ha | Tomato, cucumber: 1 kg/ha | Onion, garlic: 2 kg/ha | Orchard/citrus: 1.5–2.5 kg/ha",
     },
     usg: {
-      uz: "Afzalliklari: O'simliklarni stressdan saqlaydi. Sovuq, issiq va qurg'oqchilikda chidamliligni oshiradi. O'simlikni raqbatlantiradi va ishtahasini ochadi. Tuproq unumdorligini oshiradi, changlanishni yaxshilaydi. Xosilni yiriklashtrishda samarali vosita. Bog'lanish: @IdealAgro | +998 95 937 12 12",
-      kr: "Афзалликлари: Ўсимликларни стрессдан сақлайди. Совуқ, иссиқ ва қурғоқчиликда чидамлиликни оширади. Ўсимликни рақбатлантиради ва иштаҳасини очади. Тупроқ унумдорлигини оширади. Боғланиш: @IdealAgro | +998 95 937 12 12",
-      ru: "Преимущества: Защищает растения от стресса. Повышает устойчивость к холоду, жаре и засухе. Стимулирует растение и повышает его активность. Улучшает плодородие почвы и опыление. Контакт: @IdealAgro | +998 95 937 12 12",
-      en: "Benefits: Protects plants from stress. Increases resistance to cold, heat and drought. Stimulates plant growth and appetite. Improves soil fertility and pollination. Effectively increases yield size. Contact: @IdealAgro | +998 95 937 12 12",
+      uz: "Afzalliklari: O'simliklarni stressdan saqlaydi. Sovuq, issiq va qurg'oqchilikda chidamliligni oshiradi. O'simlikni raqbatlantiradi va ishtahasini ochadi. Tuproq unumdorligini oshiradi, changlanishni yaxshilaydi. Xosilni yiriklashtrishda samarali vosita. Bog'lanish: @BAYJO | +998 95 937 12 12",
+      kr: "Афзалликлари: Ўсимликларни стрессдан сақлайди. Совуқ, иссиқ ва қурғоқчиликда чидамлиликни оширади. Ўсимликни рақбатлантиради ва иштаҳасини очади. Тупроқ унумдорлигини оширади. Боғланиш: @BAYJO | +998 95 937 12 12",
+      ru: "Преимущества: Защищает растения от стресса. Повышает устойчивость к холоду, жаре и засухе. Стимулирует растение и повышает его активность. Улучшает плодородие почвы и опыление. Контакт: @BAYJO | +998 95 937 12 12",
+      en: "Benefits: Protects plants from stress. Increases resistance to cold, heat and drought. Stimulates plant growth and appetite. Improves soil fertility and pollination. Effectively increases yield size. Contact: @BAYJO | +998 95 937 12 12",
     },
   }),
   p({
@@ -118,10 +118,10 @@ export const seedProducts: Product[] = [
       en: "80% pure amino acids – high biological activity. Protection against drought, cold and chemical stress. Increases yield by up to 30%. Fast absorption, natural formulas, suitable for all crops (grain, vegetables, fruit, grapes).",
     },
     usg: {
-      uz: "Ekinlar 'xafa' bo'lib qolsa, 1 hafta ichida aminokislotali preparat bilan davolab, farqni his eting! Dehqonlar hosili uchun aql-idrok va kuch. Bog'lanish: @IdealAgro | +998 95 937 12 12",
-      kr: "Экинлар 'хафа' бўлиб қолса, 1 ҳафта ичида аминокислотали препарат билан даволаб, фарқни ҳис этинг! Боғланиш: @IdealAgro | +998 95 937 12 12",
-      ru: "Если растения «заболели», вылечите их за 1 неделю аминокислотным препаратом и почувствуйте разницу! Контакт: @IdealAgro | +998 95 937 12 12",
-      en: "If your crops are 'unhappy', treat them with amino acid preparation within 1 week and feel the difference! Contact: @IdealAgro | +998 95 937 12 12",
+      uz: "Ekinlar 'xafa' bo'lib qolsa, 1 hafta ichida aminokislotali preparat bilan davolab, farqni his eting! Dehqonlar hosili uchun aql-idrok va kuch. Bog'lanish: @BAYJO | +998 95 937 12 12",
+      kr: "Экинлар 'хафа' бўлиб қолса, 1 ҳафта ичида аминокислотали препарат билан даволаб, фарқни ҳис этинг! Боғланиш: @BAYJO | +998 95 937 12 12",
+      ru: "Если растения «заболели», вылечите их за 1 неделю аминокислотным препаратом и почувствуйте разницу! Контакт: @BAYJO | +998 95 937 12 12",
+      en: "If your crops are 'unhappy', treat them with amino acid preparation within 1 week and feel the difference! Contact: @BAYJO | +998 95 937 12 12",
     },
   }),
   p({
@@ -137,10 +137,10 @@ export const seedProducts: Product[] = [
       en: "70% min organic matter – improves soil structure. 80% humic substances – doubles mineral uptake. 10% potassium (K₂O) – strengthens plant immunity. Suitable for all crops: grain, vegetables, fruit, cotton.",
     },
     usg: {
-      uz: "Asosiy afzalliklar: Tuproqni tiklash – pH ni normallashtiradi, namlikni saqlaydi. O'g'it samaradorligini oshirish – N, P, K ni yaxshi o'zlashtirish. Qurg'oqchilik va kasalliklarga chidamlilik. Hosildorlikni 40% gacha oshirish (ilmiy dalillar bilan tasdiqlangan). Bog'lanish: @IdealAgro | +998 95 937 12 12",
-      kr: "Асосий афзалликлар: Тупроқни тиклаш – рН ни нормалlashtiradi, намликни сақлайди. Ўғит самарадорлигини ошириш. Қурғоқчилик ва касалликларга чидамлилик. Ҳосилдорликни 40% гача ошириш. Боғланиш: @IdealAgro | +998 95 937 12 12",
-      ru: "Основные преимущества: Восстановление почвы – нормализует pH, сохраняет влагу. Повышение эффективности удобрений – лучшее усвоение N, P, K. Устойчивость к засухе и болезням. Повышение урожайности до 40% (подтверждено научно). Контакт: @IdealAgro | +998 95 937 12 12",
-      en: "Key benefits: Soil restoration – normalises pH, retains moisture. Improves fertiliser efficiency – better N, P, K uptake. Drought and disease resistance. Increases yield by up to 40% (scientifically proven). Contact: @IdealAgro | +998 95 937 12 12",
+      uz: "Asosiy afzalliklar: Tuproqni tiklash – pH ni normallashtiradi, namlikni saqlaydi. O'g'it samaradorligini oshirish – N, P, K ni yaxshi o'zlashtirish. Qurg'oqchilik va kasalliklarga chidamlilik. Hosildorlikni 40% gacha oshirish (ilmiy dalillar bilan tasdiqlangan). Bog'lanish: @BAYJO | +998 95 937 12 12",
+      kr: "Асосий афзалликлар: Тупроқни тиклаш – рН ни нормалlashtiradi, намликни сақлайди. Ўғит самарадорлигини ошириш. Қурғоқчилик ва касалликларга чидамлилик. Ҳосилдорликни 40% гача ошириш. Боғланиш: @BAYJO | +998 95 937 12 12",
+      ru: "Основные преимущества: Восстановление почвы – нормализует pH, сохраняет влагу. Повышение эффективности удобрений – лучшее усвоение N, P, K. Устойчивость к засухе и болезням. Повышение урожайности до 40% (подтверждено научно). Контакт: @BAYJO | +998 95 937 12 12",
+      en: "Key benefits: Soil restoration – normalises pH, retains moisture. Improves fertiliser efficiency – better N, P, K uptake. Drought and disease resistance. Increases yield by up to 40% (scientifically proven). Contact: @BAYJO | +998 95 937 12 12",
     },
   }),
   p({
@@ -157,10 +157,10 @@ export const seedProducts: Product[] = [
       en: "Composition: Phosphorus (P) 30% – strengthens roots, stimulates flowering. Zinc (Zn) 7% – cell growth and disease resistance. Amino acids 20% – reduces plant stress, accelerates growth. Nitrogen (N) 3%. pH 4–6 – optimal for fast soil absorption. Manufacturer: Ideal Agro Himoya MCHJ.",
     },
     usg: {
-      uz: "Afzalliklari: Gullashni 2 barobar oshiradi – ko'proq meva va gul! Ildizlarni 'portlatadi' – o'simliklar quvvatli va barqaror. Qurg'oqchilik va kasalliklarga chidamlilik. O'simliklarni unib chiqishi va ildiz xosil bo'lishini nazorat qiladi. Hosildorlikni yuqori bo'lishini ta'minlaydi. O'simliklarni stress holatidan olib chiqadi. Bog'lanish: @IdealAgro | +998 95 937 12 12",
-      kr: "Афзалликлари: Гуллашни 2 баробар оширади. Илдизларни 'портлатади'. Қурғоқчилик ва касалликларга чидамлилик. Ўсимликларни стресс ҳолатидан олиб чиқади. Боғланиш: @IdealAgro | +998 95 937 12 12",
-      ru: "Преимущества: Увеличивает цветение в 2 раза. Взрывной рост корней. Устойчивость к засухе и болезням. Выводит растения из стресса. Повышает урожайность. Контакт: @IdealAgro | +998 95 937 12 12",
-      en: "Benefits: Doubles flowering – more fruit and flowers! Explosive root growth – strong and stable plants. Drought and disease resistance. Removes plants from stress. Increases yield. Contact: @IdealAgro | +998 95 937 12 12",
+      uz: "Afzalliklari: Gullashni 2 barobar oshiradi – ko'proq meva va gul! Ildizlarni 'portlatadi' – o'simliklar quvvatli va barqaror. Qurg'oqchilik va kasalliklarga chidamlilik. O'simliklarni unib chiqishi va ildiz xosil bo'lishini nazorat qiladi. Hosildorlikni yuqori bo'lishini ta'minlaydi. O'simliklarni stress holatidan olib chiqadi. Bog'lanish: @BAYJO | +998 95 937 12 12",
+      kr: "Афзалликлари: Гуллашни 2 баробар оширади. Илдизларни 'портлатади'. Қурғоқчилик ва касалликларга чидамлилик. Ўсимликларни стресс ҳолатидан олиб чиқади. Боғланиш: @BAYJO | +998 95 937 12 12",
+      ru: "Преимущества: Увеличивает цветение в 2 раза. Взрывной рост корней. Устойчивость к засухе и болезням. Выводит растения из стресса. Повышает урожайность. Контакт: @BAYJO | +998 95 937 12 12",
+      en: "Benefits: Doubles flowering – more fruit and flowers! Explosive root growth – strong and stable plants. Drought and disease resistance. Removes plants from stress. Increases yield. Contact: @BAYJO | +998 95 937 12 12",
     },
   }),
 ];

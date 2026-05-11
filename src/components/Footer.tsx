@@ -23,7 +23,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FiInstagram, href: 'https://instagram.com', label: 'Instagram', color: '#e1306c' },
     { icon: FiFacebook,  href: 'https://facebook.com',  label: 'Facebook',  color: '#1877f2' },
-    { icon: FiSend,      href: 'https://t.me',          label: 'Telegram',  color: '#0088cc' },
+    { icon: FiSend,      href: 'https://t.me/BAYJO',    label: 'Telegram',  color: '#0088cc' },
   ];
 
   return (
