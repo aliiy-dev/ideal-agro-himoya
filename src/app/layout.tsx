@@ -95,6 +95,9 @@ export const metadata: Metadata = {
     icon: '/icon.png',
   },
   category: 'Agriculture',
+  verification: {
+    google: 'apLtb65LzJbn8xfYUI4nRp7QM_HxRCkqbncPwLcr12k',
+  },
 };
 
 export const viewport: Viewport = {
