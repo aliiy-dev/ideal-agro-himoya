@@ -86,12 +86,11 @@ export default function AboutPage() {
             <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--ink-600)' }}>
               {t.aboutPage_history_text}
             </p>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               {[
-                { value: '6+', label: t.stats_experience },
-                { value: '200+', label: t.stats_products },
-                { value: '1K+', label: t.stats_farmers },
-                { value: '2020', label: t.stats_founded },
+                { value: '6+',   label: t.stats_experience },
+                { value: '50+',  label: t.stats_products },
+                { value: '1K+',  label: t.stats_farmers },
               ].map((s) => (
                 <div
                   key={s.label}

@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { FiUsers, FiBox, FiAward, FiTrendingUp, FiCalendar } from 'react-icons/fi';
+import { FiUsers, FiBox, FiAward, FiTrendingUp } from 'react-icons/fi';
 import { useT } from '@/store/languageStore';
 
 const Stats = () => {
@@ -11,10 +11,9 @@ const Stats = () => {
   const inView = useInView(ref, { once: true, amount: 0.3 });
 
   const items = [
-    { icon: FiUsers,    value: 1000, suffix: '+', label: t.stats_farmers,    note: "O'zbekiston bo'ylab" },
-    { icon: FiBox,      value: 50,   suffix: '+', label: t.stats_products,   note: 'Sertifikatlangan' },
-    { icon: FiAward,    value: 5,    suffix: '+', label: t.stats_experience, note: 'Yillik tajriba' },
-    { icon: FiCalendar, value: 2021, suffix: '',  label: t.stats_founded,    note: '06 iyul 2021' },
+    { icon: FiUsers, value: 1000, suffix: '+', label: t.stats_farmers,    note: "O'zbekiston bo'ylab" },
+    { icon: FiBox,   value: 50,   suffix: '+', label: t.stats_products,   note: "Khumic brendidan" },
+    { icon: FiAward, value: 6,    suffix: '+', label: t.stats_experience, note: 'Yillik tajriba' },
   ];
 
   return (
@@ -57,7 +56,7 @@ const Stats = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 max-w-3xl mx-auto">
           {items.map((item, i) => (
             <motion.div
               key={item.label}
@@ -91,28 +90,6 @@ const Stats = () => {
           ))}
         </div>
 
-        {/* Bottom trust strip */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.5 }}
-          className="mt-16 pt-10 flex flex-wrap items-center justify-center gap-8"
-          style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
-        >
-          {[
-            "🏆 ISO 9001:2015 sertifikatlangan",
-            "✅ O'zbekiston Qishloq Xo'jaligi Vazirligi ro'yxatida",
-            '🌍 Xalqaro distribyutorlar bilan ishlash',
-          ].map((item) => (
-            <span
-              key={item}
-              className="text-sm font-medium"
-              style={{ color: 'rgba(255,255,255,0.55)' }}
-            >
-              {item}
-            </span>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
