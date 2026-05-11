@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ideal Agro Himoya — O'simliklarni himoya qilish va o'g'itlar",
+  title: 'Ideal Agro Himoya',
   description:
     "Akaritsidlar, insektitsidlar, fungitsidlar, herbitsidlar va o'g'itlarning sertifikatlangan agro-himoya tizimi. Sifat foydadan ustun.",
   keywords: [
@@ -49,9 +49,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="uz" suppressHydrationWarning className={inter.variable}>
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
       <body className="antialiased" suppressHydrationWarning>
         <Navbar />
         <main>{children}</main>
