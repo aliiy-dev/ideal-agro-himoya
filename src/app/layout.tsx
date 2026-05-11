@@ -97,6 +97,7 @@ export const metadata: Metadata = {
   category: 'Agriculture',
   verification: {
     google: 'apLtb65LzJbn8xfYUI4nRp7QM_HxRCkqbncPwLcr12k',
+    yandex: 'e5e636ddbf70cc08',
   },
 };
 
