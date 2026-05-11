@@ -17,11 +17,11 @@ import {
 import { useT } from '@/store/languageStore';
 
 const CATEGORY_PILLS = [
-  { label: 'Akaritsidlar',    emoji: '🕷️', color: '#fef2f2', border: '#fecaca', text: '#991b1b', slug: 'akaritsidlar' },
-  { label: 'Insektitsidlar',  emoji: '🦟', color: '#fff7ed', border: '#fed7aa', text: '#9a3412', slug: 'insektitsidlar' },
-  { label: 'Fungitsidlar',    emoji: '🍄', color: '#f0fdf4', border: '#bbf7d0', text: '#166534', slug: 'fungitsidlar' },
-  { label: 'Herbitsidlar',    emoji: '🌿', color: '#ecfdf5', border: '#86efac', text: '#15803d', slug: 'herbitsidlar' },
-  { label: "O'g'itlar",       emoji: '🌱', color: '#f0fdf4', border: '#4ade80', text: '#166534', slug: 'ogitlar' },
+  { label: 'Biostimulyatorlar', emoji: '💧', color: '#f0f9ff', border: '#bae6fd', text: '#0284c7', slug: 'biostimulyatorlar' },
+  { label: "O'g'itlar",         emoji: '🌱', color: '#f0fdf4', border: '#4ade80', text: '#166534', slug: 'ogitlar' },
+  { label: 'Fulvic Plus',       emoji: '🌿', color: '#ecfdf5', border: '#86efac', text: '#15803d', slug: 'biostimulyatorlar' },
+  { label: 'Amino Max 80%',     emoji: '⚡', color: '#fffbeb', border: '#fde68a', text: '#92400e', slug: 'biostimulyatorlar' },
+  { label: 'Khumic-100',        emoji: '🏆', color: '#fefce8', border: '#fde047', text: '#854d0e', slug: 'ogitlar' },
 ];
 
 const Hero = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section
       className="relative overflow-hidden hero-bg"
-      style={{ paddingTop: 'clamp(108px, 14vw, 148px)', paddingBottom: 'clamp(64px, 8vw, 108px)' }}
+      style={{ paddingTop: 'clamp(168px, 16vw, 200px)', paddingBottom: 'clamp(64px, 8vw, 108px)' }}
     >
       {/* ── Background orbs ── */}
       <div className="absolute inset-0 hero-dots pointer-events-none opacity-50" />
@@ -103,7 +103,7 @@ const Hero = () => {
                 {t.hero_cta_browse}
                 <FiArrowRight style={{ width: 16, height: 16 }} />
               </Link>
-              <a href="tel:+998901234567" className="btn btn-ghost btn-lg">
+              <a href="tel:+998959371212" className="btn btn-ghost btn-lg">
                 <FiPhone style={{ width: 16, height: 16, color: 'var(--green-700)' }} />
                 {t.hero_cta_call}
               </a>

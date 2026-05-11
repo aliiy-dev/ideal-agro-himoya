@@ -89,6 +89,10 @@ export interface Dictionary {
   cat_herbitsidlar_desc: string;
   cat_ogitlar: string;
   cat_ogitlar_desc: string;
+  cat_biostimulyatorlar: string;
+  cat_biostimulyatorlar_desc: string;
+  cat_defoliantlar: string;
+  cat_defoliantlar_desc: string;
 
   // Featured
   featured_eyebrow: string;
@@ -170,6 +174,7 @@ export interface Dictionary {
   pd_addToCart: string;
   pd_inCart: string;
   pd_buyNow: string;
+  pd_contactToOrder: string;
   pd_share: string;
 
   // Cart
@@ -402,10 +407,14 @@ const dict_uz: Dictionary = {
   cat_insektitsidlar_desc: "Hasharotlardan kompleks himoya",
   cat_fungitsidlar: 'Fungitsidlar',
   cat_fungitsidlar_desc: "Zamburug'li kasalliklarga qarshi",
-  cat_herbitsidlar: 'Herbitsidlar',
+  cat_herbitsidlar: 'Gerbitsidlar',
   cat_herbitsidlar_desc: "Begona o'tlarga qarshi yechimlar",
-  cat_ogitlar: "O'g'itlar",
+  cat_ogitlar: "Kompleks o'g'itlar",
   cat_ogitlar_desc: "NPK va mikroelementlar",
+  cat_biostimulyatorlar: 'Stimulyatorlar',
+  cat_biostimulyatorlar_desc: "O'simlikni rivojlantiruvchi preparatlar",
+  cat_defoliantlar: 'Defolant',
+  cat_defoliantlar_desc: "G'o'za bargini to'kishga yordam beradi",
 
   featured_eyebrow: 'Top tanlov',
   featured_title: 'Fermerlar tez-tez sotib oladigan mahsulotlar',
@@ -482,6 +491,7 @@ const dict_uz: Dictionary = {
   pd_addToCart: "Savatga qo'shish",
   pd_inCart: 'Savatda',
   pd_buyNow: 'Hozir buyurtma berish',
+  pd_contactToOrder: "Buyurtma berish uchun bog'laning",
   pd_share: 'Ulashish',
 
   cart_title: 'Savatcha',
@@ -717,8 +727,12 @@ const dict_kr: Dictionary = {
   cat_fungitsidlar_desc: "Замбуруғли касалликларга қарши",
   cat_herbitsidlar: 'Гербицидлар',
   cat_herbitsidlar_desc: "Бегона ўтларга қарши ечимлар",
-  cat_ogitlar: "Ўғитлар",
+  cat_ogitlar: "Комплекс ўғитлар",
   cat_ogitlar_desc: "NPK ва микроэлементлар",
+  cat_biostimulyatorlar: 'Стимуляторлар',
+  cat_biostimulyatorlar_desc: "Ўсимликни ривожлантирувчи препаратлар",
+  cat_defoliantlar: 'Дефолиант',
+  cat_defoliantlar_desc: "Ғўза баргини тўкишга ёрдам беради",
 
   featured_eyebrow: 'Топ танлов',
   featured_title: 'Фермерлар тез-тез сотиб оладиган маҳсулотлар',
@@ -795,6 +809,7 @@ const dict_kr: Dictionary = {
   pd_addToCart: "Саватга қўшиш",
   pd_inCart: 'Саватда',
   pd_buyNow: 'Ҳозир буюртма бериш',
+  pd_contactToOrder: "Буюртма бериш учун боғланинг",
   pd_share: 'Улашиш',
 
   cart_title: 'Сават',
@@ -1028,8 +1043,12 @@ const dict_ru: Dictionary = {
   cat_fungitsidlar_desc: 'Против грибковых заболеваний',
   cat_herbitsidlar: 'Гербициды',
   cat_herbitsidlar_desc: 'Решения против сорняков',
-  cat_ogitlar: 'Удобрения',
+  cat_ogitlar: 'Комплексные удобрения',
   cat_ogitlar_desc: 'NPK и микроэлементы',
+  cat_biostimulyatorlar: 'Стимуляторы',
+  cat_biostimulyatorlar_desc: 'Препараты для развития растений',
+  cat_defoliantlar: 'Дефолиант',
+  cat_defoliantlar_desc: 'Способствует опаданию листьев хлопка',
 
   featured_eyebrow: 'Топ выбор',
   featured_title: 'Продукция, которую фермеры берут чаще всего',
@@ -1106,6 +1125,7 @@ const dict_ru: Dictionary = {
   pd_addToCart: 'В корзину',
   pd_inCart: 'В корзине',
   pd_buyNow: 'Заказать сейчас',
+  pd_contactToOrder: 'Свяжитесь для заказа',
   pd_share: 'Поделиться',
 
   cart_title: 'Корзина',
@@ -1339,8 +1359,12 @@ const dict_en: Dictionary = {
   cat_fungitsidlar_desc: 'For fungal diseases',
   cat_herbitsidlar: 'Herbicides',
   cat_herbitsidlar_desc: 'Effective weed control',
-  cat_ogitlar: 'Fertilizers',
+  cat_ogitlar: 'Complex Fertilizers',
   cat_ogitlar_desc: 'NPK and micronutrients',
+  cat_biostimulyatorlar: 'Stimulators',
+  cat_biostimulyatorlar_desc: 'Plant development preparations',
+  cat_defoliantlar: 'Defoliant',
+  cat_defoliantlar_desc: 'Helps cotton leaf drop',
 
   featured_eyebrow: 'Top picks',
   featured_title: 'Products farmers buy most often',
@@ -1417,6 +1441,7 @@ const dict_en: Dictionary = {
   pd_addToCart: 'Add to cart',
   pd_inCart: 'In cart',
   pd_buyNow: 'Order now',
+  pd_contactToOrder: 'Contact to order',
   pd_share: 'Share',
 
   cart_title: 'Cart',

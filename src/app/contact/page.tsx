@@ -33,8 +33,8 @@ export default function ContactPage() {
     {
       icon: FiPhone,
       title: t.contactPage_info_phone,
-      value: '+998 90 123 45 67',
-      href: 'tel:+998901234567',
+      value: '+998 95 937 12 12',
+      href: 'tel:+998959371212',
     },
     {
       icon: FiMail,
@@ -51,7 +51,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="pt-28 md:pt-32 pb-0">
+    <div className="pt-40 md:pt-44 pb-0">
       <div className="container pb-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -108,7 +108,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       required
-                      placeholder="+998 90 123 45 67"
+                      placeholder="+998 95 937 12 12"
                     />
                   </div>
                   <div>

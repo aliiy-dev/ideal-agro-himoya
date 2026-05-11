@@ -25,7 +25,7 @@ export default function AboutPage() {
   const bullets = [t.about_bullet_1, t.about_bullet_2, t.about_bullet_3, t.about_bullet_4];
 
   return (
-    <div className="pt-28 md:pt-32 pb-16">
+    <div className="pt-40 md:pt-44 pb-16">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

@@ -17,10 +17,9 @@ const AboutTeaser = () => {
   const bullets = [t.about_bullet_1, t.about_bullet_2, t.about_bullet_3, t.about_bullet_4];
 
   const stats = [
-    { value: '5+',  label: t.stats_experience, icon: STAT_ICONS[0] },
+    { value: '6+',  label: t.stats_experience, icon: STAT_ICONS[0] },
     { value: '50+', label: t.stats_products,   icon: STAT_ICONS[1] },
     { value: '1K+', label: t.stats_farmers,    icon: STAT_ICONS[2] },
-    { value: '12',  label: t.stats_regions,    icon: STAT_ICONS[3] },
   ];
 
   return (
@@ -124,7 +123,7 @@ const AboutTeaser = () => {
                 🌿
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 {stats.map((stat, i) => {
                   const col = STAT_COLORS[i];
                   const Icon = stat.icon;
@@ -173,7 +172,7 @@ const AboutTeaser = () => {
                   <FiCheck className="w-3.5 h-3.5 text-white" />
                 </div>
                 <p className="text-[13px] font-medium" style={{ color: 'var(--ink-600)' }}>
-                  O&apos;zbekiston bo&apos;ylab <strong style={{ color: 'var(--green-700)' }}>12 viloyatda</strong> xizmat ko&apos;rsatamiz
+                  <strong style={{ color: 'var(--green-700)' }}>Ideal Agro Himoya</strong> — O&apos;zbekiston bo&apos;ylab yetkazib beramiz
                 </p>
               </div>
             </div>

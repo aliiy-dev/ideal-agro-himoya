@@ -16,10 +16,7 @@ const Footer = () => {
   ];
 
   const categories = [
-    { href: '/products?category=akaritsidlar', label: 'Akaritsidlar 🕷️' },
-    { href: '/products?category=insektitsidlar', label: 'Insektitsidlar 🦟' },
-    { href: '/products?category=fungitsidlar', label: 'Fungitsidlar 🍄' },
-    { href: '/products?category=herbitsidlar', label: 'Herbitsidlar 🌿' },
+    { href: '/products?category=biostimulyatorlar', label: 'Biostimulyatorlar 💧' },
     { href: "/products?category=ogitlar", label: "O'g'itlar 🌱" },
   ];
 
@@ -148,11 +145,11 @@ const Footer = () => {
                   <FiPhone className="w-3.5 h-3.5" style={{ color: '#4ade80' }} />
                 </span>
                 <a
-                  href="tel:+998901234567"
+                  href="tel:+998959371212"
                   className="text-sm font-semibold transition-colors hover:text-white"
                   style={{ color: 'rgba(255,255,255,0.8)' }}
                 >
-                  +998 90 123 45 67
+                  +998 95 937 12 12
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -180,8 +177,8 @@ const Footer = () => {
               <p className="text-[11px] font-semibold uppercase tracking-wider mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 {t.common_callUs}
               </p>
-              <a href="tel:+998901234567" className="text-base font-bold text-white">
-                +998 90 123 45 67
+              <a href="tel:+998959371212" className="text-base font-bold text-white">
+                +998 95 937 12 12
               </a>
             </div>
           </div>

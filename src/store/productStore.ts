@@ -46,7 +46,7 @@ export const useProductStore = create<ProductStore>()(
     }),
     {
       name: 'iah-products',
-      version: 2,
+      version: 4,
       migrate: () => ({ products: seedProducts, hasHydrated: false } as Partial<ProductStore>),
       onRehydrateStorage: () => (state) => {
         if (state) {

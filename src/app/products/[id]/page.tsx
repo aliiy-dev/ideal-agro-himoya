@@ -32,10 +32,12 @@ export default function ProductDetailPage({ params }: PageProps) {
   const allProducts = useProductStore((s) => s.products);
   const product = useMemo(() => allProducts.find((p) => p.id === id), [allProducts, id]);
   const [imgError, setImgError] = useState(false);
+  const gallery = product?.images?.length ? product.images : product ? [product.image] : [];
+  const [activeImg, setActiveImg] = useState(0);
 
   if (!productsHydrated) {
     return (
-      <div className="pt-32 pb-20">
+      <div className="pt-44 pb-20">
         <div className="container text-center">
           <div className="loader mx-auto" />
         </div>
@@ -45,7 +47,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!product) {
     return (
-      <div className="pt-28 pb-20">
+      <div className="pt-40 pb-20">
         <div className="container text-center py-20">
           <h1 className="text-2xl font-extrabold mb-3" style={{ color: 'var(--ink-900)' }}>
             {t.products_empty_title}
@@ -68,7 +70,7 @@ export default function ProductDetailPage({ params }: PageProps) {
   );
 
   return (
-    <div className="pt-28 md:pt-32 pb-20">
+    <div className="pt-28 md:pt-44 pb-20">
       <div className="container">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm mb-8" style={{ color: 'var(--ink-500)' }}>
@@ -84,7 +86,7 @@ export default function ProductDetailPage({ params }: PageProps) {
         </nav>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 mb-16">
-          {/* Image */}
+          {/* Image gallery */}
           <motion.div initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}>
             <div
               className="relative aspect-[4/3] rounded-3xl overflow-hidden"
@@ -103,7 +105,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 </div>
               ) : (
                 <Image
-                  src={product.image}
+                  src={gallery[activeImg] ?? product.image}
                   alt={product.name}
                   fill
                   className="object-contain p-12"
@@ -115,6 +117,24 @@ export default function ProductDetailPage({ params }: PageProps) {
                 {categoryName(product.categorySlug, t)}
               </span>
             </div>
+            {/* Thumbnails */}
+            {gallery.length > 1 && (
+              <div className="flex gap-2 mt-3 justify-center">
+                {gallery.map((src, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveImg(i)}
+                    className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 transition-all"
+                    style={{
+                      border: `2px solid ${i === activeImg ? 'var(--green)' : 'var(--border-soft)'}`,
+                      background: 'var(--ink-50)',
+                    }}
+                  >
+                    <Image src={src} alt={`${product.name} ${i + 1}`} fill className="object-contain p-1" />
+                  </button>
+                ))}
+              </div>
+            )}
           </motion.div>
 
           {/* Info */}

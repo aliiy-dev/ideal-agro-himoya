@@ -28,7 +28,7 @@ export default function CartPage() {
 
   if (!hasHydrated) {
     return (
-      <div className="pt-32 pb-20">
+      <div className="pt-44 pb-20">
         <div className="container text-center">
           <div className="loader mx-auto" />
         </div>
@@ -38,7 +38,7 @@ export default function CartPage() {
 
   if (items.length === 0) {
     return (
-      <div className="pt-32 pb-20">
+      <div className="pt-44 pb-20">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
@@ -68,7 +68,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="pt-28 md:pt-32 pb-20">
+    <div className="pt-40 md:pt-44 pb-20">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 14 }}

@@ -64,7 +64,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 z-50" suppressHydrationWarning>
       {/* Main navbar */}
       <motion.nav
-        className={`navbar py-3 ${isScrolled ? 'scrolled' : ''}`}
+        className={`navbar py-1 ${isScrolled ? 'scrolled' : ''}`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: [0.32, 0.72, 0.32, 1] }}
@@ -104,7 +104,7 @@ const Navbar = () => {
             {/* Right cluster */}
             <div className="flex items-center gap-1 ml-auto" suppressHydrationWarning>
               <a
-                href="tel:+998901234567"
+                href="tel:+998959371212"
                 className="hidden xl:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-green-50"
                 style={{ color: 'var(--green-700)' }}
               >
@@ -114,7 +114,7 @@ const Navbar = () => {
                 >
                   <FiPhone className="w-3 h-3" style={{ color: 'var(--green-700)' }} />
                 </span>
-                <span>+998 90 123 45 67</span>
+                <span>+998 95 937 12 12</span>
               </a>
 
               <Link
@@ -266,12 +266,12 @@ const Navbar = () => {
               ))}
               <div className="pt-3 mt-3 border-t border-gray-100">
                 <a
-                  href="tel:+998901234567"
+                  href="tel:+998959371212"
                   className="flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold"
                   style={{ color: 'var(--green-700)', background: 'var(--green-50)' }}
                 >
                   <FiPhone className="w-4 h-4" />
-                  +998 90 123 45 67
+                  +998 95 937 12 12
                 </a>
               </div>
             </div>

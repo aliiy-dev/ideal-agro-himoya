@@ -57,7 +57,7 @@ function ProductsContent() {
   };
 
   return (
-    <div className="pt-28 md:pt-32 pb-16">
+    <div className="pt-40 md:pt-44 pb-16">
       <div className="container">
         {/* Header */}
         <motion.div
@@ -232,7 +232,7 @@ function ProductsContent() {
 export default function ProductsPage() {
   return (
     <Suspense fallback={
-      <div className="pt-28 text-center">
+      <div className="pt-40 text-center">
         <div className="loader mx-auto" />
       </div>
     }>
