@@ -64,7 +64,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 z-50" suppressHydrationWarning>
       {/* Main navbar */}
       <motion.nav
-        className={`navbar py-1 ${isScrolled ? 'scrolled' : ''}`}
+        className={`navbar py-3 ${isScrolled ? 'scrolled' : ''}`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: [0.32, 0.72, 0.32, 1] }}

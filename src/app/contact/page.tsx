@@ -51,7 +51,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="pt-40 md:pt-44 pb-0">
+    <div className="pt-28 md:pt-32 pb-0">
       <div className="container pb-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

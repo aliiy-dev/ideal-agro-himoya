@@ -37,7 +37,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!productsHydrated) {
     return (
-      <div className="pt-44 pb-20">
+      <div className="pt-32 pb-20">
         <div className="container text-center">
           <div className="loader mx-auto" />
         </div>
@@ -47,7 +47,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!product) {
     return (
-      <div className="pt-40 pb-20">
+      <div className="pt-28 pb-20">
         <div className="container text-center py-20">
           <h1 className="text-2xl font-extrabold mb-3" style={{ color: 'var(--ink-900)' }}>
             {t.products_empty_title}
@@ -70,7 +70,7 @@ export default function ProductDetailPage({ params }: PageProps) {
   );
 
   return (
-    <div className="pt-28 md:pt-44 pb-20">
+    <div className="pt-28 md:pt-32 pb-20">
       <div className="container">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm mb-8" style={{ color: 'var(--ink-500)' }}>

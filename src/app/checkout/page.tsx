@@ -58,7 +58,7 @@ export default function CheckoutPage() {
 
   if (order) {
     return (
-      <div className="pt-44 pb-20">
+      <div className="pt-32 pb-20">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -102,7 +102,7 @@ export default function CheckoutPage() {
 
   if (!cartHydrated) {
     return (
-      <div className="pt-44 pb-20">
+      <div className="pt-32 pb-20">
         <div className="container text-center">
           <div className="loader mx-auto" />
         </div>
@@ -112,7 +112,7 @@ export default function CheckoutPage() {
 
   if (!items.length) {
     return (
-      <div className="pt-44 pb-20">
+      <div className="pt-32 pb-20">
         <div className="container text-center">
           <h1 className="text-2xl font-extrabold mb-4" style={{ color: 'var(--ink-900)' }}>
             {t.cart_empty_title}
@@ -127,7 +127,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="pt-40 md:pt-44 pb-20">
+    <div className="pt-40 md:pt-32 pb-20">
       <div className="container">
         <Link
           href="/cart"
@@ -209,7 +209,7 @@ export default function CheckoutPage() {
 
           {/* Sidebar summary */}
           <aside>
-            <div className="card-flat p-6 sticky top-44">
+            <div className="card-flat p-6 sticky top-28">
               <h2 className="text-lg font-extrabold mb-5" style={{ color: 'var(--ink-900)' }}>
                 {t.cart_summary}
               </h2>

@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section
       className="relative overflow-hidden hero-bg"
-      style={{ paddingTop: 'clamp(168px, 16vw, 200px)', paddingBottom: 'clamp(64px, 8vw, 108px)' }}
+      style={{ paddingTop: 'clamp(108px, 14vw, 148px)', paddingBottom: 'clamp(64px, 8vw, 108px)' }}
     >
       {/* ── Background orbs ── */}
       <div className="absolute inset-0 hero-dots pointer-events-none opacity-50" />

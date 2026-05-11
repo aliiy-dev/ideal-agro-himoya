@@ -8,7 +8,7 @@ interface Props {
 }
 
 const BrandLogo = ({ size = 'md' }: Props) => {
-  const h = size === 'sm' ? 96 : 150;
+  const h = size === 'sm' ? 48 : 64;
 
   return (
     <Image
