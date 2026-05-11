@@ -126,8 +126,10 @@ const organizationSchema = {
     areaServed: 'UZ',
     availableLanguage: ['uz', 'ru', 'en'],
   },
+  email: 'idealagrohimoya@gmail.com',
   sameAs: [
     'https://t.me/BAYJO',
+    'https://www.instagram.com/ideal_agro_himoya',
   ],
 };
 

@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FiInstagram, href: 'https://instagram.com', label: 'Instagram', color: '#e1306c' },
+    { icon: FiInstagram, href: 'https://www.instagram.com/ideal_agro_himoya', label: 'Instagram', color: '#e1306c' },
     { icon: FiFacebook,  href: 'https://facebook.com',  label: 'Facebook',  color: '#1877f2' },
     { icon: FiSend,      href: 'https://t.me/BAYJO',    label: 'Telegram',  color: '#0088cc' },
   ];
@@ -160,11 +160,11 @@ const Footer = () => {
                   <FiMail className="w-3.5 h-3.5" style={{ color: '#4ade80' }} />
                 </span>
                 <a
-                  href="mailto:info@idealagro.uz"
+                  href="mailto:idealagrohimoya@gmail.com"
                   className="text-sm transition-colors hover:text-white"
                   style={{ color: 'rgba(255,255,255,0.6)' }}
                 >
-                  info@idealagro.uz
+                  idealagrohimoya@gmail.com
                 </a>
               </li>
             </ul>

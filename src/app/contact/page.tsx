@@ -38,8 +38,8 @@ export default function ContactPage() {
     {
       icon: FiMail,
       title: t.contactPage_info_email,
-      value: 'info@idealagro.uz',
-      href: 'mailto:info@idealagro.uz',
+      value: 'idealagrohimoya@gmail.com',
+      href: 'mailto:idealagrohimoya@gmail.com',
     },
     {
       icon: FiMapPin,

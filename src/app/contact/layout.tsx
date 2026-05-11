@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Bog'lanish — Ideal Agro Himoya, Andijon",
   description:
-    "Ideal Agro Himoya bilan bog'laning. Telefon: +998 95 937 12 12. Telegram: @BAYJO. Email: info@idealagro.uz. Andijon shahri, O'zbekiston.",
+    "Ideal Agro Himoya bilan bog'laning. Telefon: +998 95 937 12 12. Telegram: @BAYJO. Email: idealagrohimoya@gmail.com. Andijon shahri, O'zbekiston.",
   alternates: { canonical: 'https://www.idealagrohimoya.uz/contact' },
   openGraph: {
     title: "Ideal Agro Himoya — bog'lanish",
