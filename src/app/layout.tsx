@@ -17,11 +17,11 @@ const SITE_URL = 'https://www.idealagrohimoya.uz';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Ideal Agro Himoya — Ifoda agro himoya mahsulotlari, O\'zbekiston',
+    default: "Ideal Agro Himoya — O'simliklarni himoya qilish vositalari va o'g'itlar",
     template: '%s | Ideal Agro Himoya',
   },
   description:
-    "Ideal Agro Himoya — O'zbekistonda Ifoda brendi himoya vositalari, biostimulyatorlar, o'g'itlar va Khumic mahsulotlari rasmiy yetkazib beruvchisi. Fulvic Plus, Amino Max 80%, Khumic-100, Ideal-PZN. Andijon, +998 95 937 12 12.",
+    "Ideal Agro Himoya — O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya. Fulvic Plus, Amino Max 80%, Khumic-100, Ideal-PZN. Andijon, +998 95 937 12 12.",
   keywords: [
     'Ideal',
     'Ideal Agro',
@@ -73,9 +73,9 @@ export const metadata: Metadata = {
     locale: 'uz_UZ',
     url: SITE_URL,
     siteName: 'Ideal Agro Himoya',
-    title: 'Ideal Agro Himoya — Ifoda agro himoya, O\'g\'it va Biostimulyatorlar',
+    title: "Ideal Agro Himoya — O'simliklarni himoya va o'g'itlar yetkazib beruvchi kompaniya",
     description:
-      "Ideal Agro Himoya — Khumic brendi humik o'g'itlari, aminokislotali biostimulyatorlar va Ifoda agro himoya mahsulotlari. O'zbekiston bo'ylab yetkazib berish.",
+      "O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya.",
     images: [
       {
         url: '/images/logo.png',
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ideal Agro Himoya',
-    description: "Ifoda agro himoya, biostimulyatorlar va o'g'itlar — O'zbekiston",
+    description: "O'simliklarni himoya qilish vositalari va o'g'itlar — O'zbekiston",
     images: ['/images/logo.png'],
   },
   icons: {
@@ -112,12 +112,12 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Ideal Agro Himoya',
-  alternateName: ['Ideal Agro', 'Ideal', 'Ifoda Agro Himoya'],
+  alternateName: ['Ideal Agro', 'Ideal', 'Ideal Agrohimoya'],
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   image: `${SITE_URL}/images/logo.png`,
   description:
-    "O'zbekistonda Khumic brendi humik o'g'itlari, aminokislotali biostimulyatorlar va Ifoda agro himoya mahsulotlari rasmiy yetkazib beruvchisi.",
+    "O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya.",
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Andijon',
@@ -141,7 +141,7 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Ideal Agro Himoya',
-  alternateName: ['Ideal Agro', 'Ifoda agro himoya'],
+  alternateName: ['Ideal Agro', 'Ideal Agrohimoya'],
   url: SITE_URL,
   potentialAction: {
     '@type': 'SearchAction',

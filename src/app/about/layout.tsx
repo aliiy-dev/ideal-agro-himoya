@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Biz haqimizda — Ideal Agro Himoya, Ifoda agro yetkazib beruvchisi",
+  title: "Biz haqimizda — Ideal Agro Himoya",
   description:
-    "Ideal Agro Himoya — O'zbekistonda Khumic brendi humik o'g'itlari va Ifoda agro himoya mahsulotlari rasmiy distribyutori. 6+ yillik tajriba, 1000+ fermer mijoz, Andijon shahri.",
+    "Ideal Agro Himoya — O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya. Andijon shahri.",
   alternates: { canonical: 'https://www.idealagrohimoya.uz/about' },
   openGraph: {
     title: "Ideal Agro Himoya haqida",
-    description: "O'zbekistonda agrohimoya va o'g'itlar yetkazib berish bo'yicha tajribali kompaniya.",
+    description: "O'simliklarni himoya va o'g'itlar yetkazib berishda tajribali kompaniya.",
     url: 'https://www.idealagrohimoya.uz/about',
   },
 };
