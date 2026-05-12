@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Ideal Agro Himoya',
   },
   description:
-    "Ideal Agro Himoya — O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya. Fulvic Plus, Amino Max 80%, Khumic-100, Ideal-PZN. Andijon, +998 95 937 12 12.",
+    "Ideal Agro Himoya — O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya. +998 95 937 12 12.",
   keywords: [
     'Ideal',
     'Ideal Agro',
