@@ -69,10 +69,10 @@ const FeaturedProducts = () => {
           style={{ borderTop: '1px solid var(--border-soft)' }}
         >
           {[
-            { emoji: '🚚', text: 'Tez yetkazib berish' },
-            { emoji: '✅', text: 'Sertifikatlangan mahsulotlar' },
-            { emoji: '📞', text: 'Agronm maslahati bepul' },
-            { emoji: '💳', text: "Qulay to'lov shartlari" },
+            { emoji: '🚚', text: t.featured_trust_delivery },
+            { emoji: '✅', text: t.featured_trustBadge },
+            { emoji: '📞', text: t.featured_trust_advice },
+            { emoji: '💳', text: t.featured_trust_payment },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-2">
               <span className="text-lg">{item.emoji}</span>

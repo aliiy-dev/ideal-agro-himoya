@@ -100,7 +100,7 @@ const Categories = () => {
           className="mt-10 text-center"
         >
           <Link href="/products" className="btn btn-primary">
-            Barcha mahsulotlarni ko&apos;rish
+            {t.categories_viewAll}
             <FiArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>

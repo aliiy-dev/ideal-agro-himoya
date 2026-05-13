@@ -99,7 +99,7 @@ const Footer = () => {
           {/* Categories */}
           <div>
             <h4 className="text-sm font-bold mb-5 uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.4)', letterSpacing: '0.1em' }}>
-              Kategoriyalar
+              {t.footer_categoriesTitle}
             </h4>
             <ul className="space-y-2.5">
               {categories.map((cat) => (

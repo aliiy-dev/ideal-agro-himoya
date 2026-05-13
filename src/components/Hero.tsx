@@ -5,23 +5,29 @@ import { motion } from 'framer-motion';
 import {
   FiArrowRight,
   FiPhone,
-  FiShield,
-  FiTruck,
-  FiAward,
   FiStar,
-  FiCheckCircle,
   FiDroplet,
   FiSun,
   FiWind,
 } from 'react-icons/fi';
 import { useT } from '@/store/languageStore';
 
-const CATEGORY_PILLS = [
-  { label: 'Biostimulyatorlar', emoji: '💧', color: '#f0f9ff', border: '#bae6fd', text: '#0284c7', slug: 'biostimulyatorlar' },
-  { label: "O'g'itlar",         emoji: '🌱', color: '#f0fdf4', border: '#4ade80', text: '#166534', slug: 'ogitlar' },
-  { label: 'Fulvic Plus',       emoji: '🌿', color: '#ecfdf5', border: '#86efac', text: '#15803d', slug: 'biostimulyatorlar' },
-  { label: 'Amino Max 80%',     emoji: '⚡', color: '#fffbeb', border: '#fde68a', text: '#92400e', slug: 'biostimulyatorlar' },
-  { label: 'Khumic-100',        emoji: '🏆', color: '#fefce8', border: '#fde047', text: '#854d0e', slug: 'ogitlar' },
+type CatPill = {
+  label?: string;
+  labelKey?: 'cat_biostimulyatorlar' | 'cat_ogitlar';
+  emoji: string;
+  color: string;
+  border: string;
+  text: string;
+  slug: string;
+};
+
+const CATEGORY_PILLS: CatPill[] = [
+  { labelKey: 'cat_biostimulyatorlar', emoji: '💧', color: '#f0f9ff', border: '#bae6fd', text: '#0284c7', slug: 'biostimulyatorlar' },
+  { labelKey: 'cat_ogitlar',           emoji: '🌱', color: '#f0fdf4', border: '#4ade80', text: '#166534', slug: 'ogitlar' },
+  { label: 'Fulvic Plus',              emoji: '🌿', color: '#ecfdf5', border: '#86efac', text: '#15803d', slug: 'biostimulyatorlar' },
+  { label: 'Amino Max 80%',            emoji: '⚡', color: '#fffbeb', border: '#fde68a', text: '#92400e', slug: 'biostimulyatorlar' },
+  { label: 'Khumic-100',               emoji: '🏆', color: '#fefce8', border: '#fde047', text: '#854d0e', slug: 'ogitlar' },
 ];
 
 const Hero = () => {
@@ -63,13 +69,6 @@ const Hero = () => {
                 <FiStar style={{ width: 11, height: 11 }} />
                 {t.hero_eyebrow}
               </span>
-              <span
-                className="hidden sm:flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full"
-                style={{ color: 'var(--amber-700)', background: 'var(--amber-50)', border: '1px solid var(--amber-200)' }}
-              >
-                <FiAward style={{ width: 12, height: 12 }} />
-                ISO 9001 Sertifikatlangan
-              </span>
             </motion.div>
 
             {/* Headline */}
@@ -109,30 +108,6 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* Trust strip */}
-            <div
-              className="flex flex-wrap items-center gap-6 pt-8"
-              style={{ borderTop: '1px solid var(--border-soft)' }}
-            >
-              {[
-                { icon: FiShield,       label: t.hero_badge_quality,  note: t.hero_badge_qualityNote,   color: 'var(--green)' },
-                { icon: FiTruck,        label: t.hero_badge_delivery, note: t.hero_badge_deliveryNote,  color: 'var(--green)' },
-                { icon: FiCheckCircle,  label: '100%',                note: 'Sertifikatlangan',          color: 'var(--amber-600)' },
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2.5 min-w-0">
-                  <span
-                    className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'var(--green-50)' }}
-                  >
-                    <item.icon style={{ width: 16, height: 16, color: item.color }} />
-                  </span>
-                  <div>
-                    <p className="text-sm font-bold leading-tight" style={{ color: 'var(--ink-900)' }}>{item.label}</p>
-                    <p className="text-xs leading-tight" style={{ color: 'var(--ink-500)' }}>{item.note}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </motion.div>
 
           {/* ══════ RIGHT: Animated Visual (no images) ══════ */}
@@ -158,26 +133,29 @@ const Hero = () => {
             className="text-xs font-semibold uppercase tracking-widest mb-4"
             style={{ color: 'var(--ink-400)' }}
           >
-            Mahsulot kategoriyalari
+            {t.hero_categoryPillsTitle}
           </p>
           <div className="flex flex-wrap gap-2.5">
-            {CATEGORY_PILLS.map((cat) => (
-              <Link
-                key={cat.label}
-                href={`/products?category=${cat.slug}`}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105 hover:shadow-md"
-                style={{ background: cat.color, border: `1.5px solid ${cat.border}`, color: cat.text }}
-              >
-                <span role="img" aria-hidden>{cat.emoji}</span>
-                {cat.label}
-              </Link>
-            ))}
+            {CATEGORY_PILLS.map((cat, i) => {
+              const label = cat.labelKey ? t[cat.labelKey] : cat.label;
+              return (
+                <Link
+                  key={i}
+                  href={`/products?category=${cat.slug}`}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105 hover:shadow-md"
+                  style={{ background: cat.color, border: `1.5px solid ${cat.border}`, color: cat.text }}
+                >
+                  <span role="img" aria-hidden>{cat.emoji}</span>
+                  {label}
+                </Link>
+              );
+            })}
             <Link
               href="/products"
               className="flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-105"
               style={{ background: 'var(--green)', color: 'white', boxShadow: 'var(--shadow-green)' }}
             >
-              Barchasi
+              {t.hero_categoryPillsAll}
               <FiArrowRight style={{ width: 13, height: 13 }} />
             </Link>
           </div>
@@ -192,12 +170,12 @@ const Hero = () => {
 ───────────────────────────────────────────────────────────────── */
 const HeroVisual = ({ t }: { t: ReturnType<typeof useT> }) => {
   const categories = [
-    { emoji: '🕷️', label: 'Akaritsidlar',   bg: '#fef2f2', border: '#fecaca', color: '#991b1b' },
-    { emoji: '🦟', label: 'Insektitsidlar', bg: '#fff7ed', border: '#fed7aa', color: '#9a3412' },
-    { emoji: '🍄', label: 'Fungitsidlar',   bg: '#f0fdf4', border: '#bbf7d0', color: '#166534' },
-    { emoji: '🌿', label: 'Herbitsidlar',   bg: '#ecfdf5', border: '#86efac', color: '#15803d' },
-    { emoji: '🌱', label: "O'g'itlar",      bg: '#f7fee7', border: '#bef264', color: '#3f6212' },
-    { emoji: '💧', label: 'Mikroelementlar',bg: '#eff6ff', border: '#bfdbfe', color: '#1d4ed8' },
+    { emoji: '🦟', label: t.cat_insektitsidlar,    bg: '#fff7ed', border: '#fed7aa', color: '#9a3412' },
+    { emoji: '🍄', label: t.cat_fungitsidlar,      bg: '#f0fdf4', border: '#bbf7d0', color: '#166534' },
+    { emoji: '🌿', label: t.cat_herbitsidlar,      bg: '#ecfdf5', border: '#86efac', color: '#15803d' },
+    { emoji: '🌱', label: t.cat_ogitlar,           bg: '#f7fee7', border: '#bef264', color: '#3f6212' },
+    { emoji: '💧', label: t.cat_biostimulyatorlar, bg: '#eff6ff', border: '#bfdbfe', color: '#1d4ed8' },
+    { emoji: '🍂', label: t.cat_defoliantlar,      bg: '#fdf4ff', border: '#e9d5ff', color: '#7e22ce' },
   ];
 
   return (
@@ -241,9 +219,9 @@ const HeroVisual = ({ t }: { t: ReturnType<typeof useT> }) => {
         {/* Mini stats row */}
         <div className="grid grid-cols-3 gap-3 w-full mt-2">
           {[
-            { v: '1000+', l: 'Fermer' },
-            { v: '50+',   l: 'Mahsulot' },
-            { v: '5+',    l: 'Yillik' },
+            { v: '1000+', l: t.stats_farmers },
+            { v: '50+',   l: t.stats_products },
+            { v: '6+',    l: t.stats_experience },
           ].map((s) => (
             <div
               key={s.v}
@@ -287,23 +265,6 @@ const HeroVisual = ({ t }: { t: ReturnType<typeof useT> }) => {
         );
       })}
 
-      {/* ─ Floating stat badge — top left ─ */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.7, duration: 0.4 }}
-        className="absolute -top-3 -left-3 glass rounded-2xl px-4 py-3 flex items-center gap-3 z-30"
-        style={{ boxShadow: 'var(--shadow-lg)' }}
-      >
-        <span className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: '#fef2f2' }}>
-          <FiShield style={{ width: 16, height: 16, color: '#dc2626' }} />
-        </span>
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: 'var(--ink-500)' }}>Sifat</p>
-          <p className="text-xs font-bold" style={{ color: 'var(--ink-900)' }}>{t.hero_badge_qualityNote}</p>
-        </div>
-      </motion.div>
-
       {/* ─ Floating stat badge — bottom right ─ */}
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
@@ -316,8 +277,8 @@ const HeroVisual = ({ t }: { t: ReturnType<typeof useT> }) => {
           <FiDroplet style={{ width: 16, height: 16, color: 'var(--amber-600)' }} />
         </span>
         <div>
-          <p className="text-sm font-extrabold leading-none mb-0.5" style={{ color: 'var(--ink-900)' }}>5+ yil</p>
-          <p className="text-[11px]" style={{ color: 'var(--ink-500)' }}>Tajriba</p>
+          <p className="text-sm font-extrabold leading-none mb-0.5" style={{ color: 'var(--ink-900)' }}>{t.hero_visual_yearsValue}</p>
+          <p className="text-[11px]" style={{ color: 'var(--ink-500)' }}>{t.hero_visual_yearsLabel}</p>
         </div>
       </motion.div>
 

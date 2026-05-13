@@ -90,7 +90,7 @@ const AboutTeaser = () => {
                 <FiArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
-                Bog&apos;lanish
+                {t.common_contact}
               </Link>
             </div>
           </motion.div>
@@ -172,7 +172,7 @@ const AboutTeaser = () => {
                   <FiCheck className="w-3.5 h-3.5 text-white" />
                 </div>
                 <p className="text-[13px] font-medium" style={{ color: 'var(--ink-600)' }}>
-                  <strong style={{ color: 'var(--green-700)' }}>Ideal Agro Himoya</strong> — O&apos;zbekiston bo&apos;ylab yetkazib beramiz
+                  <strong style={{ color: 'var(--green-700)' }}>Ideal Agro Himoya</strong> — {t.aboutTeaser_deliveryNote}
                 </p>
               </div>
             </div>

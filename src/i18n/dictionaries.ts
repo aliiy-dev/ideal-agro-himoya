@@ -38,6 +38,7 @@ export interface Dictionary {
   common_close: string;
   common_callUs: string;
   common_writeUs: string;
+  common_contact: string;
   common_viewAll: string;
   common_learnMore: string;
   common_required: string;
@@ -59,6 +60,10 @@ export interface Dictionary {
   hero_badge_qualityNote: string;
   hero_badge_delivery: string;
   hero_badge_deliveryNote: string;
+  hero_categoryPillsTitle: string;
+  hero_categoryPillsAll: string;
+  hero_visual_yearsValue: string;
+  hero_visual_yearsLabel: string;
 
   // Value props
   value_eyebrow: string;
@@ -78,6 +83,7 @@ export interface Dictionary {
   categories_title: string;
   categories_subtitle: string;
   categories_all: string;
+  categories_viewAll: string;
   categories_count: (n: number) => string;
   cat_akaritsidlar: string;
   cat_akaritsidlar_desc: string;
@@ -99,6 +105,10 @@ export interface Dictionary {
   featured_title: string;
   featured_subtitle: string;
   featured_cta: string;
+  featured_trustBadge: string;
+  featured_trust_delivery: string;
+  featured_trust_advice: string;
+  featured_trust_payment: string;
 
   // Stats
   stats_farmers: string;
@@ -108,6 +118,9 @@ export interface Dictionary {
   stats_founded: string;
   stats_eyebrow: string;
   stats_title: string;
+  stats_farmersNote: string;
+  stats_productsNote: string;
+  stats_experienceNote: string;
 
   // About teaser
   about_eyebrow: string;
@@ -117,6 +130,7 @@ export interface Dictionary {
   about_bullet_2: string;
   about_bullet_3: string;
   about_bullet_4: string;
+  aboutTeaser_deliveryNote: string;
 
   // CTA strip
   cta_title: string;
@@ -258,6 +272,7 @@ export interface Dictionary {
   // Footer
   footer_about: string;
   footer_quickLinks: string;
+  footer_categoriesTitle: string;
   footer_contact: string;
   footer_follow: string;
   footer_rights: string;
@@ -356,6 +371,7 @@ const dict_uz: Dictionary = {
   common_close: 'Yopish',
   common_callUs: 'Qo\'ng\'iroq qiling',
   common_writeUs: 'Yozing',
+  common_contact: "Bog'lanish",
   common_viewAll: "Hammasini ko'rish",
   common_learnMore: 'Batafsil',
   common_required: 'Majburiy',
@@ -377,6 +393,10 @@ const dict_uz: Dictionary = {
   hero_badge_qualityNote: 'Sertifikatlangan sifat',
   hero_badge_delivery: 'Tez yetkazish',
   hero_badge_deliveryNote: "Butun O'zbekiston bo'ylab",
+  hero_categoryPillsTitle: 'Mahsulot kategoriyalari',
+  hero_categoryPillsAll: 'Barchasi',
+  hero_visual_yearsValue: '6+ yil',
+  hero_visual_yearsLabel: 'Tajriba',
 
   value_eyebrow: 'Nega Ideal Agro Himoya',
   value_title: 'Hosildor mavsum uchun ishonchli yondoshuv',
@@ -400,6 +420,7 @@ const dict_uz: Dictionary = {
   categories_subtitle:
     "Ekinlaringiz uchun zarur preparatni kategoriya bo'yicha tezda toping.",
   categories_all: 'Barcha mahsulotlar',
+  categories_viewAll: "Barcha mahsulotlarni ko'rish",
   categories_count: (n) => `${n} ta mahsulot`,
   cat_akaritsidlar: 'Akaritsidlar',
   cat_akaritsidlar_desc: 'Kanalarga qarshi maxsus preparatlar',
@@ -421,6 +442,10 @@ const dict_uz: Dictionary = {
   featured_subtitle:
     'Ushbu preparatlar so\'nggi mavsumda eng ko\'p sotib olinadi va dalalardan ijobiy natijalarga ega.',
   featured_cta: "Barcha mahsulotlarni ko'rish",
+  featured_trustBadge: "Sertifikatlangan mahsulotlar",
+  featured_trust_delivery: "Tez yetkazib berish",
+  featured_trust_advice: "Agronom maslahati bepul",
+  featured_trust_payment: "Qulay to'lov shartlari",
 
   stats_farmers: 'Fermer mijozlar',
   stats_products: 'Mahsulot',
@@ -429,6 +454,9 @@ const dict_uz: Dictionary = {
   stats_founded: 'Tashkil topgan yil',
   stats_eyebrow: 'Raqamlarda',
   stats_title: "Natijalar o'z so'zini aytadi",
+  stats_farmersNote: "O'zbekiston bo'ylab",
+  stats_productsNote: "Khumic brendidan",
+  stats_experienceNote: "Yillik tajriba",
 
   about_eyebrow: 'Biz haqimizda',
   about_title: 'Sifat — biz uchun mas\'uliyat',
@@ -438,6 +466,7 @@ const dict_uz: Dictionary = {
   about_bullet_2: 'Doimiy agronom maslahati',
   about_bullet_3: "Butun O'zbekiston bo'ylab tez yetkazib berish",
   about_bullet_4: "Qulay narx va shaffof shartlar",
+  aboutTeaser_deliveryNote: "O'zbekiston bo'ylab yetkazib beramiz",
 
   cta_title: "Ekinlaringizni bugun himoyalang",
   cta_subtitle: "Mutaxassislarimiz qo'ng'iroqdan keyin sizga eng mos sxemani tavsiya qiladi.",
@@ -578,6 +607,7 @@ const dict_uz: Dictionary = {
 
   footer_about: "O'simliklarni himoya qilish va o'g'itlar — sifat foydadan ustun.",
   footer_quickLinks: 'Tezkor havolalar',
+  footer_categoriesTitle: 'Kategoriyalar',
   footer_contact: 'Aloqa',
   footer_follow: 'Bizni kuzating',
   footer_rights: 'Barcha huquqlar himoyalangan.',
@@ -674,6 +704,7 @@ const dict_kr: Dictionary = {
   common_close: 'Ёпиш',
   common_callUs: 'Қўнғироқ қилинг',
   common_writeUs: 'Ёзинг',
+  common_contact: "Боғланиш",
   common_viewAll: "Ҳаммасини кўриш",
   common_learnMore: 'Батафсил',
   common_required: 'Мажбурий',
@@ -695,6 +726,10 @@ const dict_kr: Dictionary = {
   hero_badge_qualityNote: 'Сертификатланган сифат',
   hero_badge_delivery: 'Тез етказиш',
   hero_badge_deliveryNote: "Бутун Ўзбекистон бўйлаб",
+  hero_categoryPillsTitle: 'Маҳсулот категориялари',
+  hero_categoryPillsAll: 'Барчаси',
+  hero_visual_yearsValue: '6+ йил',
+  hero_visual_yearsLabel: 'Тажриба',
 
   value_eyebrow: 'Нега Ideal Agro Himoya',
   value_title: 'Ҳосилдор мавсум учун ишончли ёндошув',
@@ -718,6 +753,7 @@ const dict_kr: Dictionary = {
   categories_subtitle:
     "Экинларингиз учун зарур препаратни категория бўйича тезда топинг.",
   categories_all: 'Барча маҳсулотлар',
+  categories_viewAll: "Барча маҳсулотларни кўриш",
   categories_count: (n) => `${n} та маҳсулот`,
   cat_akaritsidlar: 'Акарицидлар',
   cat_akaritsidlar_desc: 'Каналарга қарши махсус препаратлар',
@@ -739,6 +775,10 @@ const dict_kr: Dictionary = {
   featured_subtitle:
     "Ушбу препаратлар сўнгги мавсумда энг кўп сотиб олинади ва далалардан ижобий натижаларга эга.",
   featured_cta: "Барча маҳсулотларни кўриш",
+  featured_trustBadge: "Сертификатланган маҳсулотлар",
+  featured_trust_delivery: "Тез етказиб бериш",
+  featured_trust_advice: "Агроном маслаҳати бепул",
+  featured_trust_payment: "Қулай тўлов шартлари",
 
   stats_farmers: 'Фермер мижозлар',
   stats_products: 'Маҳсулот',
@@ -747,6 +787,9 @@ const dict_kr: Dictionary = {
   stats_founded: 'Ташкил топган йил',
   stats_eyebrow: 'Рақамларда',
   stats_title: "Натижалар ўз сўзини айтади",
+  stats_farmersNote: "Ўзбекистон бўйлаб",
+  stats_productsNote: "Khumic брендидан",
+  stats_experienceNote: "Йиллик тажриба",
 
   about_eyebrow: 'Биз ҳақимизда',
   about_title: "Сифат — биз учун масъулият",
@@ -756,6 +799,7 @@ const dict_kr: Dictionary = {
   about_bullet_2: 'Доимий агроном маслаҳати',
   about_bullet_3: "Бутун Ўзбекистон бўйлаб тез етказиб бериш",
   about_bullet_4: "Қулай нарх ва шаффоф шартлар",
+  aboutTeaser_deliveryNote: "Ўзбекистон бўйлаб етказиб берамиз",
 
   cta_title: "Экинларингизни бугун ҳимояланг",
   cta_subtitle: "Мутахассисларимиз қўнғироқдан кейин сизга энг мос схемани тавсия қилади.",
@@ -896,6 +940,7 @@ const dict_kr: Dictionary = {
 
   footer_about: "Ўсимликларни ҳимоя қилиш ва ўғитлар — сифат фойдадан устун.",
   footer_quickLinks: 'Тезкор ҳаволалар',
+  footer_categoriesTitle: 'Категориялар',
   footer_contact: 'Алоқа',
   footer_follow: 'Бизни кузатинг',
   footer_rights: 'Барча ҳуқуқлар ҳимояланган.',
@@ -992,6 +1037,7 @@ const dict_ru: Dictionary = {
   common_close: 'Закрыть',
   common_callUs: 'Позвонить',
   common_writeUs: 'Написать',
+  common_contact: 'Связаться',
   common_viewAll: 'Смотреть все',
   common_learnMore: 'Подробнее',
   common_required: 'Обязательно',
@@ -1013,6 +1059,10 @@ const dict_ru: Dictionary = {
   hero_badge_qualityNote: 'Сертифицированное качество',
   hero_badge_delivery: 'Быстрая доставка',
   hero_badge_deliveryNote: 'По всему Узбекистану',
+  hero_categoryPillsTitle: 'Категории продуктов',
+  hero_categoryPillsAll: 'Все',
+  hero_visual_yearsValue: '6+ лет',
+  hero_visual_yearsLabel: 'Опыт',
 
   value_eyebrow: 'Почему Ideal Agro Himoya',
   value_title: 'Надёжный подход к урожайному сезону',
@@ -1034,6 +1084,7 @@ const dict_ru: Dictionary = {
   categories_title: 'Точное решение для каждой задачи',
   categories_subtitle: 'Быстро находите нужный препарат для своих культур по категории.',
   categories_all: 'Вся продукция',
+  categories_viewAll: 'Посмотреть все продукты',
   categories_count: (n) => `${n} продуктов`,
   cat_akaritsidlar: 'Акарициды',
   cat_akaritsidlar_desc: 'Специальные препараты против клещей',
@@ -1055,6 +1106,10 @@ const dict_ru: Dictionary = {
   featured_subtitle:
     'Эти препараты были самыми покупаемыми в прошлом сезоне и зарекомендовали себя на полях.',
   featured_cta: 'Смотреть всю продукцию',
+  featured_trustBadge: 'Сертифицированная продукция',
+  featured_trust_delivery: 'Быстрая доставка',
+  featured_trust_advice: 'Бесплатная консультация агронома',
+  featured_trust_payment: 'Удобные условия оплаты',
 
   stats_farmers: 'Клиентов-фермеров',
   stats_products: 'Продуктов',
@@ -1063,6 +1118,9 @@ const dict_ru: Dictionary = {
   stats_founded: 'Год основания',
   stats_eyebrow: 'В цифрах',
   stats_title: 'Результаты говорят сами за себя',
+  stats_farmersNote: 'По всему Узбекистану',
+  stats_productsNote: 'Бренд Khumic',
+  stats_experienceNote: 'Опыт работы',
 
   about_eyebrow: 'О нас',
   about_title: 'Качество — наша ответственность',
@@ -1072,6 +1130,7 @@ const dict_ru: Dictionary = {
   about_bullet_2: 'Постоянная поддержка агронома',
   about_bullet_3: 'Быстрая доставка по всему Узбекистану',
   about_bullet_4: 'Честная цена и прозрачные условия',
+  aboutTeaser_deliveryNote: 'Доставка по всему Узбекистану',
 
   cta_title: 'Защитите урожай уже сегодня',
   cta_subtitle: 'После звонка наши специалисты предложат вам подходящую схему обработки.',
@@ -1211,6 +1270,7 @@ const dict_ru: Dictionary = {
 
   footer_about: 'Защита растений и удобрения — качество превыше выгоды.',
   footer_quickLinks: 'Быстрые ссылки',
+  footer_categoriesTitle: 'Категории',
   footer_contact: 'Контакты',
   footer_follow: 'Мы в соцсетях',
   footer_rights: 'Все права защищены.',
@@ -1307,6 +1367,7 @@ const dict_en: Dictionary = {
   common_close: 'Close',
   common_callUs: 'Call us',
   common_writeUs: 'Message us',
+  common_contact: 'Contact',
   common_viewAll: 'View all',
   common_learnMore: 'Learn more',
   common_required: 'Required',
@@ -1328,6 +1389,10 @@ const dict_en: Dictionary = {
   hero_badge_qualityNote: 'Certified quality',
   hero_badge_delivery: 'Fast delivery',
   hero_badge_deliveryNote: 'Across Uzbekistan',
+  hero_categoryPillsTitle: 'Product categories',
+  hero_categoryPillsAll: 'All',
+  hero_visual_yearsValue: '6+ years',
+  hero_visual_yearsLabel: 'Experience',
 
   value_eyebrow: 'Why Ideal Agro Himoya',
   value_title: 'A reliable partner for a productive season',
@@ -1350,6 +1415,7 @@ const dict_en: Dictionary = {
   categories_title: 'A precise solution for every problem',
   categories_subtitle: 'Find the right product for your crops by category.',
   categories_all: 'All products',
+  categories_viewAll: 'View all products',
   categories_count: (n) => `${n} products`,
   cat_akaritsidlar: 'Acaricides',
   cat_akaritsidlar_desc: 'Specialized formulations against mites',
@@ -1371,6 +1437,10 @@ const dict_en: Dictionary = {
   featured_subtitle:
     'These formulations were the most-ordered products of last season with strong field results.',
   featured_cta: 'View full catalog',
+  featured_trustBadge: 'Certified products',
+  featured_trust_delivery: 'Fast delivery',
+  featured_trust_advice: 'Free agronomist consultation',
+  featured_trust_payment: 'Convenient payment terms',
 
   stats_farmers: 'Farmer customers',
   stats_products: 'Products',
@@ -1379,6 +1449,9 @@ const dict_en: Dictionary = {
   stats_founded: 'Year founded',
   stats_eyebrow: 'In numbers',
   stats_title: 'Results speak for themselves',
+  stats_farmersNote: 'Across Uzbekistan',
+  stats_productsNote: 'Khumic brand',
+  stats_experienceNote: 'Years experience',
 
   about_eyebrow: 'About us',
   about_title: 'Quality is our responsibility',
@@ -1388,6 +1461,7 @@ const dict_en: Dictionary = {
   about_bullet_2: 'Continuous agronomic support',
   about_bullet_3: 'Fast delivery across Uzbekistan',
   about_bullet_4: 'Fair pricing and transparent terms',
+  aboutTeaser_deliveryNote: 'Delivery across Uzbekistan',
 
   cta_title: 'Protect your crops today',
   cta_subtitle: 'Our specialists will recommend the right schedule after a quick call.',
@@ -1527,6 +1601,7 @@ const dict_en: Dictionary = {
 
   footer_about: 'Plant protection products and fertilizers — quality over profit.',
   footer_quickLinks: 'Quick links',
+  footer_categoriesTitle: 'Categories',
   footer_contact: 'Contact',
   footer_follow: 'Follow us',
   footer_rights: 'All rights reserved.',

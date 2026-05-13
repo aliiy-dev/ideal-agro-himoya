@@ -11,9 +11,9 @@ const Stats = () => {
   const inView = useInView(ref, { once: true, amount: 0.3 });
 
   const items = [
-    { icon: FiUsers, value: 1000, suffix: '+', label: t.stats_farmers,    note: "O'zbekiston bo'ylab" },
-    { icon: FiBox,   value: 50,   suffix: '+', label: t.stats_products,   note: "Khumic brendidan" },
-    { icon: FiAward, value: 6,    suffix: '+', label: t.stats_experience, note: 'Yillik tajriba' },
+    { icon: FiUsers, value: 1000, suffix: '+', label: t.stats_farmers,    note: t.stats_farmersNote },
+    { icon: FiBox,   value: 50,   suffix: '+', label: t.stats_products,   note: t.stats_productsNote },
+    { icon: FiAward, value: 6,    suffix: '+', label: t.stats_experience, note: t.stats_experienceNote },
   ];
 
   return (
