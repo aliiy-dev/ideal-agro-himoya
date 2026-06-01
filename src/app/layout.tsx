@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Ideal Agro Himoya',
   },
   description:
-    "Ideal Agro Himoya — O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya. +998 95 937 12 12.",
+    "Ideal Agro Himoya — O'zbekistonda agro himoya vositalari, biostimulyatorlar, o'g'itlar va Khumic mahsulotlari rasmiy yetkazib beruvchisi. +998 95 937 12 12.",
   keywords: [
     'Ideal',
     'Ideal Agro',
@@ -30,10 +30,6 @@ export const metadata: Metadata = {
     'ideal agro himoya',
     'agro himoya',
     'agrohimoya',
-    'Ifoda',
-    'ifoda',
-    'ifoda uz',
-    'ifoda.uz',
     "o'simlik himoyasi",
     "o'simliklarni himoya qilish",
     'biostimulyator',
@@ -73,9 +69,9 @@ export const metadata: Metadata = {
     locale: 'uz_UZ',
     url: SITE_URL,
     siteName: 'Ideal Agro Himoya',
-    title: "Ideal Agro Himoya — O'simliklarni himoya va o'g'itlar yetkazib beruvchi kompaniya",
+    title: "Ideal Agro Himoya — agro himoya vositalari, o'g'itlar va Khumic mahsulotlari",
     description:
-      "O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya.",
+      "O'zbekistonda agro himoya vositalari, biostimulyatorlar, o'g'itlar va Khumic mahsulotlari rasmiy yetkazib beruvchisi.",
     images: [
       {
         url: '/images/logo.png',
@@ -88,7 +84,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ideal Agro Himoya',
-    description: "O'simliklarni himoya qilish vositalari va o'g'itlar — O'zbekiston",
+    description: "O'zbekistonda agro himoya vositalari, biostimulyatorlar, o'g'itlar va Khumic mahsulotlari rasmiy yetkazib beruvchisi.",
     images: ['/images/logo.png'],
   },
   icons: {
@@ -117,7 +113,7 @@ const organizationSchema = {
   logo: `${SITE_URL}/images/logo.png`,
   image: `${SITE_URL}/images/logo.png`,
   description:
-    "O'zbekistonda ko'p yillardan beri fermerlar va xususiy uy xo'jaliklariga o'simliklarni himoya qilish vositalari va o'g'itlar yetkazib beruvchi kompaniya.",
+    "O'zbekistonda agro himoya vositalari, biostimulyatorlar, o'g'itlar va Khumic mahsulotlari rasmiy yetkazib beruvchisi.",
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Andijon',
@@ -155,7 +151,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="uz" suppressHydrationWarning className={inter.variable}>
+    <html lang="uz" data-scroll-behavior="smooth" suppressHydrationWarning className={inter.variable}>
       <head>
         <script
           type="application/ld+json"

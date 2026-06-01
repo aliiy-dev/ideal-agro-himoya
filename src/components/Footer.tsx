@@ -1,12 +1,17 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiPhone, FiMail, FiMapPin, FiInstagram, FiFacebook, FiSend, FiArrowRight } from 'react-icons/fi';
 import { useT } from '@/store/languageStore';
 import BrandLogo from './BrandLogo';
 
 const Footer = () => {
   const t = useT();
+  const pathname = usePathname();
+
+  // The admin panel has its own shell/layout — never render the public footer there.
+  if (pathname?.startsWith('/admin')) return null;
 
   const quickLinks = [
     { href: '/', label: t.nav_home },

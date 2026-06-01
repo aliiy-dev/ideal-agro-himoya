@@ -3,68 +3,7 @@
 import { motion } from 'framer-motion';
 import { FiStar, FiMessageSquare } from 'react-icons/fi';
 import { useT, useLanguage } from '@/store/languageStore';
-
-interface Story {
-  name: string;
-  role: { uz: string; kr: string; ru: string; en: string };
-  body: { uz: string; kr: string; ru: string; en: string };
-  avatar: string;
-  region: string;
-}
-
-const stories: Story[] = [
-  {
-    name: 'Bахтиёр Раимов',
-    role: {
-      uz: 'Fermer xo\u2019jaligi rahbari',
-      kr: 'Фермер хўжалиги раҳбари',
-      ru: 'Руководитель фермерского хозяйства',
-      en: 'Farm manager',
-    },
-    body: {
-      uz: "Olma bog'imda kanaga qarshi PROMAYT bilan ishladim — bir hafta ichida natija ko'rindi. Agronom maslahati uchun alohida rahmat.",
-      kr: "Олма боғимда канага қарши PROMAYT билан ишладим — бир ҳафта ичида натижа кўринди. Агроном маслаҳати учун алоҳида раҳмат.",
-      ru: 'Обработал яблоневый сад от клеща с PROMAYT — результат уже через неделю. Отдельное спасибо за консультацию агронома.',
-      en: 'Treated my apple orchard against mites with PROMAYT — results within a week. Special thanks for the agronomist support.',
-    },
-    avatar: 'БР',
-    region: 'Andijon',
-  },
-  {
-    name: 'Зилола Камалова',
-    role: {
-      uz: 'Issiqxona egasi',
-      kr: 'Иссиқхона эгаси',
-      ru: 'Владелица теплицы',
-      en: 'Greenhouse owner',
-    },
-    body: {
-      uz: "Pomidorlarda fitoftora bilan kurashish uchun FOSETAL ajoyib chiqdi. Tez yetkazib berishlari ham hayron qoldirdi.",
-      kr: "Помидорларда фитофтора билан курашиш учун FOSETAL ажойиб чиқди. Тез етказиб беришлари ҳам ҳайрон қолдирди.",
-      ru: 'Против фитофторы на томатах FOSETAL отлично сработал. Быстрая доставка приятно удивила.',
-      en: 'FOSETAL worked great against late blight on my tomatoes. Their fast delivery was a pleasant surprise.',
-    },
-    avatar: 'ЗК',
-    region: 'Toshkent viloyati',
-  },
-  {
-    name: 'Ҳусан Йўлдошев',
-    role: {
-      uz: 'Paxta yetishtiruvchi',
-      kr: 'Пахта етиштирувчи',
-      ru: 'Хлопковод',
-      en: 'Cotton grower',
-    },
-    body: {
-      uz: "Paxtazorda begona o'tlarga qarshi YOKOZUNA effektli bo'ldi, narxi ham mos. Hosil sifatim sezilarli oshdi.",
-      kr: "Пахтазорда бегона ўтларга қарши YOKOZUNA эффектли бўлди, нархи ҳам мос. Ҳосил сифатим сезиларли ошди.",
-      ru: 'YOKOZUNA против сорняков в хлопке отлично подошёл по цене и эффективности. Качество урожая заметно выросло.',
-      en: 'YOKOZUNA controlled weeds in my cotton perfectly, with a fair price. Yield quality improved noticeably.',
-    },
-    avatar: 'ҲЙ',
-    region: 'Buxoro',
-  },
-];
+import { useTestimonialStore, testimonialAvatar } from '@/store/testimonialStore';
 
 const AVATAR_COLORS = [
   { bg: '#dcfce7', color: '#166534' },
@@ -75,6 +14,9 @@ const AVATAR_COLORS = [
 const Testimonials = () => {
   const t = useT();
   const lang = useLanguage();
+  const stories = useTestimonialStore((s) => s.testimonials);
+
+  if (stories.length === 0) return null;
 
   return (
     <section className="section" style={{ background: 'var(--bg)' }}>
@@ -89,56 +31,64 @@ const Testimonials = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {stories.map((story, i) => (
-            <motion.div
-              key={story.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="testi-card flex flex-col"
-            >
-              {/* Stars */}
-              <div className="flex gap-1 mb-5">
-                {[...Array(5)].map((_, j) => (
-                  <FiStar
-                    key={j}
-                    className="w-4 h-4"
-                    style={{ color: 'var(--amber-600)', fill: 'var(--amber-600)' }}
-                  />
-                ))}
-              </div>
-
-              {/* Quote */}
-              <p
-                className="text-[15px] leading-relaxed mb-6 flex-1"
-                style={{ color: 'var(--ink-700)' }}
+          {stories.map((story, i) => {
+            const palette = AVATAR_COLORS[i % AVATAR_COLORS.length];
+            const rating = Math.max(1, Math.min(5, story.rating || 5));
+            return (
+              <motion.div
+                key={story.id}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-40px' }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="testi-card flex flex-col"
               >
-                &ldquo;{story.body[lang]}&rdquo;
-              </p>
+                {/* Stars */}
+                <div className="flex gap-1 mb-5">
+                  {[...Array(5)].map((_, j) => (
+                    <FiStar
+                      key={j}
+                      className="w-4 h-4"
+                      style={{
+                        color: 'var(--amber-600)',
+                        fill: j < rating ? 'var(--amber-600)' : 'transparent',
+                        opacity: j < rating ? 1 : 0.35,
+                      }}
+                    />
+                  ))}
+                </div>
 
-              {/* Author */}
-              <div
-                className="flex items-center gap-3 pt-5"
-                style={{ borderTop: '1px solid var(--border-soft)' }}
-              >
-                <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
-                  style={{ background: AVATAR_COLORS[i].bg, color: AVATAR_COLORS[i].color }}
+                {/* Quote */}
+                <p
+                  className="text-[15px] leading-relaxed mb-6 flex-1"
+                  style={{ color: 'var(--ink-700)' }}
                 >
-                  {story.avatar}
+                  &ldquo;{story.body[lang]}&rdquo;
+                </p>
+
+                {/* Author */}
+                <div
+                  className="flex items-center gap-3 pt-5"
+                  style={{ borderTop: '1px solid var(--border-soft)' }}
+                >
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
+                    style={{ background: palette.bg, color: palette.color }}
+                  >
+                    {testimonialAvatar(story.name)}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-[14px] leading-tight" style={{ color: 'var(--ink-900)' }}>
+                      {story.name}
+                    </p>
+                    <p className="text-[12px] mt-0.5" style={{ color: 'var(--ink-500)' }}>
+                      {story.role[lang]} &middot; <span style={{ color: 'var(--green-700)' }}>📍 {story.region}</span>
+                    </p>
+                  </div>
                 </div>
-                <div className="min-w-0">
-                  <p className="font-bold text-[14px] leading-tight" style={{ color: 'var(--ink-900)' }}>
-                    {story.name}
-                  </p>
-                  <p className="text-[12px] mt-0.5" style={{ color: 'var(--ink-500)' }}>
-                    {story.role[lang]} &middot; <span style={{ color: 'var(--green-700)' }}>📍 {story.region}</span>
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Rating summary */}

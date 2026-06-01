@@ -135,14 +135,6 @@ export default function AdminLoginPage() {
               <FiArrowRight className="w-4 h-4" />
             </button>
           </form>
-
-          <div
-            className="mt-6 p-3 rounded-lg text-xs leading-relaxed"
-            style={{ background: 'var(--ink-50)', color: 'var(--ink-500)' }}
-          >
-            <strong style={{ color: 'var(--ink-700)' }}>Demo:</strong> admin /
-            IdealAgro2026!
-          </div>
         </div>
       </motion.div>
     </div>

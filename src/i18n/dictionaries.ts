@@ -338,6 +338,23 @@ export interface Dictionary {
   admin_settings_save: string;
   admin_settings_passwordChanged: string;
   admin_settings_passwordMismatch: string;
+  admin_nav_testimonials: string;
+  admin_testi_title: string;
+  admin_testi_new: string;
+  admin_testi_search: string;
+  admin_testi_col_name: string;
+  admin_testi_col_review: string;
+  admin_testi_col_rating: string;
+  admin_testi_col_actions: string;
+  admin_testi_form_new: string;
+  admin_testi_form_edit: string;
+  admin_testi_form_name: string;
+  admin_testi_form_region: string;
+  admin_testi_form_rating: string;
+  admin_testi_form_role: string;
+  admin_testi_form_body: string;
+  admin_testi_deleteConfirm: string;
+  admin_testi_empty: string;
 
   // Toast
   toast_addedToCart: string;
@@ -672,6 +689,23 @@ const dict_uz: Dictionary = {
   admin_settings_save: 'Saqlash',
   admin_settings_passwordChanged: "Parol muvaffaqiyatli o'zgartirildi.",
   admin_settings_passwordMismatch: 'Yangi parollar mos kelmadi.',
+  admin_nav_testimonials: 'Izohlar',
+  admin_testi_title: 'Mijozlar izohlari',
+  admin_testi_new: "Yangi izoh qo'shish",
+  admin_testi_search: 'Izoh qidirish...',
+  admin_testi_col_name: 'Mijoz',
+  admin_testi_col_review: 'Izoh',
+  admin_testi_col_rating: 'Baho',
+  admin_testi_col_actions: 'Amallar',
+  admin_testi_form_new: 'Yangi izoh',
+  admin_testi_form_edit: 'Izohni tahrirlash',
+  admin_testi_form_name: 'Mijoz ismi',
+  admin_testi_form_region: 'Hudud',
+  admin_testi_form_rating: 'Baho (1–5 yulduz)',
+  admin_testi_form_role: 'Lavozim / faoliyat',
+  admin_testi_form_body: 'Izoh matni',
+  admin_testi_deleteConfirm: 'Ushbu izohni o’chirmoqchimisiz?',
+  admin_testi_empty: 'Hozircha izohlar yo’q.',
 
   toast_addedToCart: "Savatga qo'shildi",
   toast_removedFromCart: "Savatdan o'chirildi",
@@ -1005,6 +1039,23 @@ const dict_kr: Dictionary = {
   admin_settings_save: 'Сақлаш',
   admin_settings_passwordChanged: "Парол муваффақиятли ўзгартирилди.",
   admin_settings_passwordMismatch: 'Янги пароллар мос келмади.',
+  admin_nav_testimonials: 'Изоҳлар',
+  admin_testi_title: 'Мижозлар изоҳлари',
+  admin_testi_new: 'Янги изоҳ қўшиш',
+  admin_testi_search: 'Изоҳ қидириш...',
+  admin_testi_col_name: 'Мижоз',
+  admin_testi_col_review: 'Изоҳ',
+  admin_testi_col_rating: 'Баҳо',
+  admin_testi_col_actions: 'Амаллар',
+  admin_testi_form_new: 'Янги изоҳ',
+  admin_testi_form_edit: 'Изоҳни таҳрирлаш',
+  admin_testi_form_name: 'Мижоз исми',
+  admin_testi_form_region: 'Ҳудуд',
+  admin_testi_form_rating: 'Баҳо (1–5 юлдуз)',
+  admin_testi_form_role: 'Лавозим / фаолият',
+  admin_testi_form_body: 'Изоҳ матни',
+  admin_testi_deleteConfirm: 'Ушбу изоҳни ўчирмоқчимисиз?',
+  admin_testi_empty: 'Ҳозирча изоҳлар йўқ.',
 
   toast_addedToCart: "Саватга қўшилди",
   toast_removedFromCart: "Саватдан ўчирилди",
@@ -1335,6 +1386,23 @@ const dict_ru: Dictionary = {
   admin_settings_save: 'Сохранить',
   admin_settings_passwordChanged: 'Пароль успешно изменён.',
   admin_settings_passwordMismatch: 'Новые пароли не совпадают.',
+  admin_nav_testimonials: 'Отзывы',
+  admin_testi_title: 'Отзывы клиентов',
+  admin_testi_new: 'Добавить отзыв',
+  admin_testi_search: 'Поиск отзыва...',
+  admin_testi_col_name: 'Клиент',
+  admin_testi_col_review: 'Отзыв',
+  admin_testi_col_rating: 'Оценка',
+  admin_testi_col_actions: 'Действия',
+  admin_testi_form_new: 'Новый отзыв',
+  admin_testi_form_edit: 'Редактировать отзыв',
+  admin_testi_form_name: 'Имя клиента',
+  admin_testi_form_region: 'Регион',
+  admin_testi_form_rating: 'Оценка (1–5 звёзд)',
+  admin_testi_form_role: 'Должность / деятельность',
+  admin_testi_form_body: 'Текст отзыва',
+  admin_testi_deleteConfirm: 'Удалить этот отзыв?',
+  admin_testi_empty: 'Пока нет отзывов.',
 
   toast_addedToCart: 'Добавлено в корзину',
   toast_removedFromCart: 'Удалено из корзины',
@@ -1666,6 +1734,23 @@ const dict_en: Dictionary = {
   admin_settings_save: 'Save',
   admin_settings_passwordChanged: 'Password updated successfully.',
   admin_settings_passwordMismatch: 'Passwords do not match.',
+  admin_nav_testimonials: 'Reviews',
+  admin_testi_title: 'Customer reviews',
+  admin_testi_new: 'Add review',
+  admin_testi_search: 'Search reviews...',
+  admin_testi_col_name: 'Customer',
+  admin_testi_col_review: 'Review',
+  admin_testi_col_rating: 'Rating',
+  admin_testi_col_actions: 'Actions',
+  admin_testi_form_new: 'New review',
+  admin_testi_form_edit: 'Edit review',
+  admin_testi_form_name: 'Customer name',
+  admin_testi_form_region: 'Region',
+  admin_testi_form_rating: 'Rating (1–5 stars)',
+  admin_testi_form_role: 'Role / occupation',
+  admin_testi_form_body: 'Review text',
+  admin_testi_deleteConfirm: 'Delete this review?',
+  admin_testi_empty: 'No reviews yet.',
 
   toast_addedToCart: 'Added to cart',
   toast_removedFromCart: 'Removed from cart',

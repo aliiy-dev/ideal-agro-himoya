@@ -7,6 +7,7 @@ import {
   FiHome,
   FiBox,
   FiClipboard,
+  FiMessageSquare,
   FiSettings,
   FiLogOut,
   FiMenu,
@@ -26,6 +27,7 @@ const AdminShell = ({ children }: { children: ReactNode }) => {
     { href: '/admin',          label: t.admin_nav_dashboard, icon: FiHome },
     { href: '/admin/products', label: t.admin_nav_products,  icon: FiBox },
     { href: '/admin/orders',   label: t.admin_nav_orders,    icon: FiClipboard },
+    { href: '/admin/testimonials', label: t.admin_nav_testimonials, icon: FiMessageSquare },
     { href: '/admin/settings', label: t.admin_nav_settings,  icon: FiSettings },
   ];
 

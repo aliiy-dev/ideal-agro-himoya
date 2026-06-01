@@ -60,6 +60,9 @@ const Navbar = () => {
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
+  // The admin panel has its own shell/layout — never render the public navbar there.
+  if (pathname?.startsWith('/admin')) return null;
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50" suppressHydrationWarning>
       {/* Main navbar */}
